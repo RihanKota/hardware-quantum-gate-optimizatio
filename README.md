@@ -37,10 +37,6 @@ The optimization workflow is:
     +--------------+--------------+
     |                             |
     v                             v
-<<<<<<< HEAD
-
-=======
->>>>>>> 611e7cc82fd5e6dda4b77c9ea91044fb78fe8b13
     Gate Fidelity Leakage Calculation
 | |
 +-------------+---------------+
@@ -53,13 +49,6 @@ Optimized Pulse Parameters
 |
 v
 Results + Visualization
-
-
-<<<<<<< HEAD
-=======
-
->>>>>>> 611e7cc82fd5e6dda4b77c9ea91044fb78fe8b13
----
 
 # Features
 
@@ -116,8 +105,6 @@ The optimizer searches for parameters with:
 
 ---
 
-<<<<<<< HEAD
-=======
 <!-- OPTIMIZATION_RESULTS_START -->
 
 ## Latest Optimization Result
@@ -126,15 +113,12 @@ Waiting for optimizer...
 
 <!-- OPTIMIZATION_RESULTS_END -->
 
->>>>>>> 611e7cc82fd5e6dda4b77c9ea91044fb78fe8b13
 # Installation
 
 Clone the repository:
 
 ```bash
 git clone https://github.com/yourusername/hardware-quantum-gate-optimization.git
-<<<<<<< HEAD
-
 
 <!-- OPTIMIZATION_RESULTS_START -->
 
@@ -152,6 +136,3 @@ Last Updated:
 2026-07-28 11:57:25
 
 <!-- OPTIMIZATION_RESULTS_END -->
-
-=======
->>>>>>> 611e7cc82fd5e6dda4b77c9ea91044fb78fe8b13
