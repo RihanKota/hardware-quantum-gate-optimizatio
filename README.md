@@ -115,10 +115,6 @@ Waiting for optimizer...
 
 # Installation
 
-Clone the repository:
-
-```bash
-git clone https://github.com/yourusername/hardware-quantum-gate-optimization.git
 
 <!-- OPTIMIZATION_RESULTS_START -->
 
@@ -136,3 +132,10 @@ Last Updated:
 2026-07-28 11:57:25
 
 <!-- OPTIMIZATION_RESULTS_END -->
+
+
+
+Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/hardware-quantum-gate-optimization.git
