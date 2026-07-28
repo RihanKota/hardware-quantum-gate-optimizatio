@@ -109,6 +109,14 @@ The optimizer searches for parameters with:
 
 ---
 
+<!-- OPTIMIZATION_RESULTS_START -->
+
+## Latest Optimization Result
+
+Waiting for optimizer...
+
+<!-- OPTIMIZATION_RESULTS_END -->
+
 # Installation
 
 Clone the repository:
