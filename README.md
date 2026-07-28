@@ -115,3 +115,22 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/yourusername/hardware-quantum-gate-optimization.git
+
+
+<!-- OPTIMIZATION_RESULTS_START -->
+
+## Latest Optimization Result
+
+| Parameter | Value |
+|---|---|
+| Amplitude | 21.747534 |
+| Duration | 0.484300 |
+| Fidelity | 0.9988681474 |
+| Leakage | 0.0018303995 |
+
+Last Updated:
+
+2026-07-28 11:57:25
+
+<!-- OPTIMIZATION_RESULTS_END -->
+
