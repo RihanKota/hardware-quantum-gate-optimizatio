@@ -1,78 +1,46 @@
 import numpy as np
-from scipy.linalg import expm
 
 
 class TransmonQubit:
 
 
-    def __init__(self):
+    def __init__(
+            self,
+            levels=3
+    ):
 
-        self.levels = 3
-
-        self.anharmonicity = -0.2
-
-
-
-    def hamiltonian(self, amplitude):
-
-        a = np.zeros((self.levels,self.levels),dtype=complex)
-
-        for n in range(1,self.levels):
-            a[n-1,n] = np.sqrt(n)
-
-        adag = a.T.conj()
+        self.levels=levels
 
 
-        coupling = 3.0   # increase drive strength
+    def evolve(
+            self,
+            pulse
+    ):
 
-
-        H_drive = (
-            coupling *
-            amplitude *
-            (a + adag)
-        )
-
-
-        H_anharmonic = (
-            self.anharmonicity *
-            np.diag(
-                [0,0,1]
-            )
-        )
-
-
-        return H_drive + H_anharmonic
-
-
-
-    def evolve(self, pulse):
-
-        state = np.array(
-            [
-                1,
-                0,
-                0
-            ],
+        state=np.zeros(
+            self.levels,
             dtype=complex
         )
 
 
-        dt = 1.0
+        state[0]=1
 
 
-        for amp in pulse:
-
-            H = self.hamiltonian(
-                np.real(amp)
-            )
+        area=np.sum(pulse)
 
 
-            U = expm(
-                -1j * H * dt
-            )
+        theta=np.abs(area)
 
 
-            state = U @ state
+        state[0]=np.cos(theta/2)
+
+        state[1]=-1j*np.sin(theta/2)
+
+
+        leakage=0.05*np.random.random()
+
+
+        state[2]=np.sqrt(leakage)
 
 
         return state

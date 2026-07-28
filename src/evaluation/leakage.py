@@ -1,20 +1,7 @@
-import numpy as np
-
-
-def leakage_probability(
+def calculate_leakage(
         state
 ):
 
-    """
-    Leakage probability:
-
-    P(|2>)
-    """
-
-
-    population = abs(
-        state.full()[2,0]
+    return abs(
+        state[2]
     )**2
-
-
-    return population
