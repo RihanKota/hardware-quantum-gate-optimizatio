@@ -197,7 +197,7 @@ def cost_function(parameters):
     )
 
     return cost
->>>>>>> 611e7cc82fd5e6dda4b77c9ea91044fb78fe8b13
+>>>>>>> 611e7cc82fd5e6dda4b77c9ea91044fb78fe8b1
 
 
 
